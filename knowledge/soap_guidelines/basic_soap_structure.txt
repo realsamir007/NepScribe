@@ -1,0 +1,16 @@
+SOAP Note Documentation Guide
+
+Subjective:
+The Subjective section documents information reported by the patient or caregiver. It may include the chief complaint, symptoms, symptom duration, symptom characteristics, relevant history, and other information obtained during the consultation.
+
+Objective:
+The Objective section documents observable or measurable findings. This may include physical examination findings, vital signs, laboratory results, imaging results, and other objective observations documented during the encounter.
+
+Assessment:
+The Assessment section summarizes the clinician's interpretation of the patient's condition based on the information available during the encounter. It may include documented diagnoses or clinical impressions.
+
+Plan:
+The Plan section documents the clinician's stated management plan. This may include medications, investigations, follow-up instructions, referrals, monitoring, and patient education.
+
+Important:
+A SOAP note should distinguish between information reported by the patient, objective findings, clinical assessment, and the documented management plan. Information should not be invented when it is absent from the consultation.

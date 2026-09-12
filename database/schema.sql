@@ -59,3 +59,18 @@ CREATE TABLE soap_notes (
     version INTEGER NOT NULL DEFAULT 1,
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
+
+
+CREATE TABLE knowledge_documents (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    content TEXT NOT NULL,
+    source TEXT NOT NULL,
+    category VARCHAR(100) NOT NULL,
+    metadata JSONB,
+    embedding VECTOR(1024),
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE INDEX knowledge_documents_embedding_idx
+ON knowledge_documents
+USING hnsw (embedding vector_cosine_ops);
