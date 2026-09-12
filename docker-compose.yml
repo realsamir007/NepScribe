@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: nepscribe-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: nepscribe
+      POSTGRES_PASSWORD: nepscribe_dev_password
+      POSTGRES_DB: nepscribe
+    ports:
+      - "5433:5432"
+    volumes:
+      - nepscribe_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  nepscribe_postgres_data:
