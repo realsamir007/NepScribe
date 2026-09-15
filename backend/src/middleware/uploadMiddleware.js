@@ -7,7 +7,9 @@ const audioStorage = multer.diskStorage({
     const consultationId = req.params.consultationId;
 
     const uploadDirectory = path.join(
-      process.cwd(),
+      __dirname,
+      "..",
+      "..",
       "..",
       "storage",
       "audio",

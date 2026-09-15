@@ -6,6 +6,8 @@ const authRoutes = require("./routes/authRoutes");
 const consultationRoutes = require("./routes/consultationRoutes");
 const audioRoutes = require("./routes/audioRoutes");
 const processingJobRoutes = require("./routes/processingJobRoutes");
+const transcriptRoutes = require("./routes/transcriptRoutes");
+const soapRoutes = require("./routes/soapRoutes");
 
 const app = express();
 
@@ -44,6 +46,10 @@ app.use("/api/auth", authRoutes);
 app.use("/api/consultations", consultationRoutes);
 
 app.use("/api/audio", audioRoutes);
+
+app.use("/api/transcripts", transcriptRoutes);
+
+app.use("/api/soap-notes", soapRoutes);
 
 app.use(
   "/api/processing-jobs",
