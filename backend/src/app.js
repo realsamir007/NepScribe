@@ -1,5 +1,6 @@
 const express = require("express");
 
+const cors = require("cors");
 const pool = require("./config/database");
 
 const authRoutes = require("./routes/authRoutes");
@@ -10,6 +11,14 @@ const transcriptRoutes = require("./routes/transcriptRoutes");
 const soapRoutes = require("./routes/soapRoutes");
 
 const app = express();
+
+app.use(
+  cors({
+    origin: "http://localhost:5173",
+    methods: ["GET", "POST", "PATCH", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  }),
+);
 
 app.use(express.json());
 

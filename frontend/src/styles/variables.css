@@ -1,0 +1,43 @@
+:root {
+  /* Brand Colors */
+  --color-emerald-ink: #064e3b;
+  --color-champagne: #f8e7c9;
+
+  /* Supporting Colors */
+  --color-white: #ffffff;
+  --color-background: #fafaf9;
+  --color-surface: #ffffff;
+  --color-border: #e7e5e4;
+
+  /* Text */
+  --color-text-primary: #1c1917;
+  --color-text-secondary: #57534e;
+  --color-text-muted: #78716c;
+
+  /* Status */
+  --color-success: #15803d;
+  --color-warning: #ca8a04;
+  --color-danger: #dc2626;
+  --color-info: #2563eb;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+
+  /* Border Radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px rgb(0 0 0 / 0.07);
+
+  /* Layout */
+  --max-content-width: 1440px;
+}

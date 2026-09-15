@@ -24,7 +24,7 @@ async function createProcessingJob(req, res) {
 
     res.status(201).json({
       message: "Processing job created successfully",
-      job,
+      processingJob: job,
     });
   } catch (error) {
     console.error(
