@@ -1,4 +1,4 @@
-from app.services.embedding_service import generate_embeddings
+from app.services.knowledge.embedding_service import generate_embeddings
 
 
 texts = [

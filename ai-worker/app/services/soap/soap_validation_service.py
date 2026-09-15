@@ -1,7 +1,7 @@
 import re
 
 from app.schemas.soap_schema import SOAPNote
-from app.services.embedding_service import generate_embeddings
+from app.services.knowledge.embedding_service import generate_embeddings
 
 
 SOAP_SECTIONS = [
@@ -13,6 +13,9 @@ SOAP_SECTIONS = [
 
 ALLOWED_META_STATEMENTS = [
     "no clinical assessment was documented",
+    "no objective findings documented",
+    "no objective findings were documented",
+    "no objective findings were noted",
     "vital signs are not documented",
     "no vital signs were documented",
     "not documented",
@@ -242,10 +245,13 @@ def validate_soap_note(
 
         value = getattr(soap_note, section, "")
 
+        # if not value or not value.strip():
+        #     warnings.append(
+        #         f"{section.capitalize()} section is empty."
+        #     )
+            
         if not value or not value.strip():
-            warnings.append(
-                f"{section.capitalize()} section is empty."
-            )
+            continue
 
     # ---------------------------------------------------------
     # 2. Validate each generated sentence

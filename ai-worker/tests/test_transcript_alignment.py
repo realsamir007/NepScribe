@@ -1,6 +1,6 @@
 import json
 
-from app.services.transcript_service import (
+from app.services.transcription.transcript_service import (
     merge_transcript_with_speakers,
 )
 from tests.test_config import PROCESSED_DIR

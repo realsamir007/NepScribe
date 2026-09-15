@@ -1,5 +1,5 @@
-from app.services.rag_service import build_rag_context
-from app.services.prompt_service import build_soap_prompt
+from app.services.rag.rag_service import build_rag_context
+from app.services.rag.prompt_service import build_soap_prompt
 
 transcript = """
 The patient reports a cough that has continued for three weeks.

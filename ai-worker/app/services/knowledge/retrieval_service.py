@@ -1,7 +1,7 @@
 from sqlalchemy import text
 
 from app.database import engine
-from app.services.embedding_service import generate_embeddings
+from app.services.knowledge.embedding_service import generate_embeddings
 
 
 def search_knowledge(

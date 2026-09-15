@@ -1,4 +1,4 @@
-from app.services.knowledge_embedding_service import (
+from app.services.knowledge.knowledge_embedding_service import (
     store_knowledge_embeddings,
 )
 

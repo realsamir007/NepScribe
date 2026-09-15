@@ -1,6 +1,6 @@
 import json
 
-from app.services.transcript_preprocessing_service import (
+from app.services.transcription.transcript_preprocessing_service import (
     build_clean_transcript,
 )
 from tests.test_config import PROCESSED_DIR

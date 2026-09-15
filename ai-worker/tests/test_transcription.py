@@ -2,7 +2,7 @@ import json
 
 from pathlib import Path
 
-from app.services.transcription_service import transcribe_audio
+from app.services.transcription.transcription_service import transcribe_audio
 from tests.test_config import AUDIO_DIR, PROCESSED_DIR
 
 

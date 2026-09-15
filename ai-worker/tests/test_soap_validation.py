@@ -1,5 +1,5 @@
 from app.schemas.soap_schema import SOAPNote
-from app.services.soap_validation_service import validate_soap_note
+from app.services.soap.soap_validation_service import validate_soap_note
 
 
 transcript = """

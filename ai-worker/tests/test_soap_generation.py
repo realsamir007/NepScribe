@@ -1,6 +1,6 @@
-from app.services.llm_service import generate_soap_note
-from app.services.prompt_service import build_soap_prompt
-from app.services.rag_service import build_rag_context
+from app.services.soap.llm_service import generate_soap_note
+from app.services.rag.prompt_service import build_soap_prompt
+from app.services.rag.rag_service import build_rag_context
 
 
 transcript = """

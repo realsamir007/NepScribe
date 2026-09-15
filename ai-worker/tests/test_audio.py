@@ -1,4 +1,4 @@
-from app.services.audio_service import normalize_audio
+from app.services.audio.audio_service import normalize_audio
 from tests.test_config import AUDIO_DIR
 
 

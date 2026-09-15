@@ -1,6 +1,6 @@
 import json
 
-from app.services.diarization_service import diarize_audio
+from app.services.transcription.diarization_service import diarize_audio
 from tests.test_config import AUDIO_DIR, PROCESSED_DIR
 
 

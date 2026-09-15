@@ -1,4 +1,4 @@
-from app.services.soap_pipeline_service import generate_and_validate_soap
+from app.services.soap.soap_pipeline_service import generate_and_validate_soap
 
 
 transcript = """

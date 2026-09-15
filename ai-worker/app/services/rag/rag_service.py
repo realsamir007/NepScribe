@@ -1,4 +1,4 @@
-from app.services.retriever_service import retrieve_knowledge
+from app.services.knowledge.retriever_service import retrieve_knowledge
 
 
 def build_rag_context(

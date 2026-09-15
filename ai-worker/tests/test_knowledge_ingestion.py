@@ -1,4 +1,4 @@
-from app.services.knowledge_service import (
+from app.services.knowledge.knowledge_service import (
     load_knowledge_documents,
     split_knowledge_documents,
 )

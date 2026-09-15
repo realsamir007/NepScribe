@@ -1,4 +1,4 @@
-from app.services.llm_service import generate_response
+from app.services.soap.llm_service import generate_response
 
 
 prompt = """

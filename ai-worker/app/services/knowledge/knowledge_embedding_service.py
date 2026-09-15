@@ -3,8 +3,8 @@ import json
 from sqlalchemy import text
 
 from app.database import engine
-from app.services.embedding_service import generate_embeddings
-from app.services.knowledge_service import (
+from app.services.knowledge.embedding_service import generate_embeddings
+from app.services.knowledge.knowledge_service import (
     load_knowledge_documents,
     split_knowledge_documents,
 )

@@ -1,4 +1,4 @@
-from app.services.retrieval_service import search_knowledge
+from app.services.knowledge.retrieval_service import search_knowledge
 
 
 queries = [
